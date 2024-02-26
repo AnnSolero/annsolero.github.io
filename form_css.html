@@ -1,48 +1,98 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-<link rel="stylesheet" href="form.css">
-<title> The style Attribute </title>
-<div>
-<h1> Registration Form </h1>
-</head>
-<body>
-<form>
-First Name: </br>
-<input type= "text" name= "firstname" />
-</br>
-Last Name: </br>
-<input type= "text" name= "lastname" />
-</br>
-Nick Name: </br>
-<input type= "text" name= "nickname" />
-</br>
-Email: </br>
-<input type= "text" name= "email" />
-</br>
-Password: </br>
-<input type= "password" name= "password" />
-</br>
-Date of Birth: </br>
-<input type= "date" name= "date of birth" />
-</br>
-Gender: 
-</br>
-<input type="radio" name="gender" value="male"> Male
-<input type="radio" name="gender" value="female"> Female
-<input type="radio" name="gender" value="other"> Other
-</br>
-Mobile:
-</br> <input type= "text" name= "phone" />
-</br>
-
-Address:</br>
-<textarea name= "description" cols= "30" rows= "10" > </textarea>
-</br>
-<input type="submit" value="Submit" />
-<input type="reset" value="Reset" />
-</form>
-</body>
-<div>
-</html>
+ <!DOCTYPE html>
+  <html>
+  <head>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <style>
+     
+     div{
+    text-align: center;
+    width: 300px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 250px;
+  
+  }
+  
+    body{
+      text-align: center;
+      margin: 10px 0;
+      padding: 12px 250px;
+      background-color: #778899;
+      font-family: 'Oswald';
+      }
+      form { 
+        padding: 12px 30px;
+        margin: 10px 0;
+        text-align: left;
+        
+        }
+      
+       input[type=text]{
+        padding: 5px ;
+        margin: 5px 0;
+        width:230px;
+        }
+        input[type=password]{
+        padding: 5px ;
+        margin: 5px 0;
+        width:230px;
+        }
+         input[type=date]{
+        padding: 5px ;
+        margin: 5px 0;
+        width:230px;
+        }
+      input[type=submit]{
+        color:white;
+        background-color:green;
+        }
+         input[type=reset]{
+        color:white;
+        background-color:red;
+        }
+      
+  </style>
+  <title> The style Attribute </title>
+  <div>
+  <h1> Registration Form </h1>
+  </head>
+  <body>
+  <form>
+  First Name: </br>
+  <input type= "text" name= "firstname" />
+  </br>
+  Last Name: </br>
+  <input type= "text" name= "lastname" />
+  </br>
+  Nick Name: </br>
+  <input type= "text" name= "nickname" />
+  </br>
+  Email: </br>
+  <input type= "text" name= "email" />
+  </br>
+  Password: </br>
+  <input type= "password" name= "password" />
+  </br>
+  Date of Birth: </br>
+  <input type= "date" name= "date of birth" />
+  </br>
+  Gender: 
+  </br>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other
+  </br>
+  Mobile:
+  </br> <input type= "text" name= "phone" />
+  </br>
+  
+  Address:</br>
+  <textarea name= "description" cols= "30" rows= "10" > </textarea>
+  </br>
+  <input type="submit" value="Submit" />
+  <input type="reset" value="Reset" />
+  </form>
+  </body>
+  <div>
+  </html>
