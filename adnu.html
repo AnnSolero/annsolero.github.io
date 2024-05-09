@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<style> 
+        body {
+            margin: 0;
+            background-color: #ECF0F1;
+        }
+        .AppBar {
+            width: 100%;
+            height: 8%;
+            background-color: #0C356A; 
+            display: flex;
+            position: fixed;
+            top: 0; /* Place the app bar at the top */
+            z-index: 999; /* Ensure it's above other content */
+        }
+        .search-bar {
+            padding: 5px 10px 5px 30px;
+            width: 500px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+            background-color: #fff;
+            color: #000;
+            align-self: center;
+            margin: auto;
+            background-image: url('https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png');
+            background-size: 20px; 
+            background-repeat: no-repeat;
+            background-position: 10px center; 
+        }
+        .Adnu-Logo {
+            width: 80px;
+            height: 70px;
+            margin-right: 10px;
+            margin-left: 40px;
+            align-self: center;
+        }
+        .Logo-Name {
+            color: #fff; 
+            margin-right: 10px;
+        }     
+        .Bar-Icon {
+            width: 50px;
+            height: 40px;
+            margin-right: 20px;
+            align-self: center;
+        }
+        .Yellow {
+            width: 100%;
+            height: 1%;
+            background-color: #FFC436; 
+            position: absolute;
+            top: 8%;
+            z-index: 998;
+        }
+        .carousel-container {
+            width: 100%;
+            max-width: 1580px;
+            height: 350px;
+            border-radius: 5px;
+            margin: 120px auto 50px;
+            position: relative;
+            overflow: hidden;
+            background-color: rgba(1, 116, 190, 0.1);
+        }
+        .carousel-content {
+            display: flex;
+            transition: transform 0.5s ease;
+            padding-top: 30px;
+        }
+        .carousel-item {
+            position: relative;
+             flex: 0 0 22%; /* Show three items at a time */
+             height: 280px;
+             margin: 0 10px;
+             background-color: #fff;
+             border-radius: 5px;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+             overflow: hidden;
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+        }
+  
+        .item-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #000;
+            font-size: 14px;
+            text-align: center;
+        }
+        .item-name {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }   
+        .item-price {
+            margin: 5px 0 0;
+            font-size: 12px;
+            color: #000000;
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }    
+        .category-container {
+            width: 90%; 
+            max-width: 1800px; 
+            margin: 50px auto; /* Center the container horizontally and adjust the top margin */
+            height: 250px; 
+            border-radius: 50px;
+        
+            font-size: 0;
+            text-align: center;
+        }
+
+        .category-content {
+            padding-bottom: 0px;
+        }
+
+        .category-item {
+            display: inline-block;
+            width: 260px;
+            height: 250px;
+            margin: 0 30px;
+            background-color: #0C356A;
+            border-radius: 150px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 4px solid #0C356A;
+        }
+        .Category-Name {
+            position: relative;
+            width: 150px;
+            height: 23px;
+            align-content: center;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: black;
+            background-color: rgba(1, 116, 190, 0.3);
+            font-size: 14px;
+            font-weight: bold;
+        }
+</style>
+<head>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="AppBar"> 
+        <img class="Adnu-Logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Ateneo_de_Naga_University_logo.png/175px-Ateneo_de_Naga_University_logo.png" alt="Logo">
+        <p class="Logo-Name">ADNU</p>
+        <p class="Logo-Name">E-CO</p>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <img class="Bar-Icon" src="https://i.ibb.co/cF4s9Vb/carbon-shopping-cart.png" alt="carbon-shopping-cart" border="0"></a>
+        <img class="Bar-Icon" src="https://i.ibb.co/J2rLV50/pajamas-profile.png" alt="Profile Icon" border="0"></a>  
+    </div>
+    <div class="Yellow"></div>  
+
+    <div class="carousel-container">
+        <div class="carousel-content">
+          <div class="carousel-item" style="margin-left: 50px; background-image: url('https://media.karousell.com/media/photos/products/2021/8/18/genshin_impact_klee_dodoco_cro_1629289573_c5f6d1b8_progressive.jpg');">
+            <div class="item-details">
+                <h3 class="item-name">Genshin Impact Klee Dodoco Cro</h3>
+                <p class="item-price">$20.99</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('https://down-ph.img.susercontent.com/file/ph-11134207-7r98v-lq7cdnmnqcenea')">
+            <div class="item-details">
+                <h3 class="item-name">Genshin Impact Klee Dodoco Cro</h3>
+                <p class="item-price">$20.99</p>
+            </div>
+        </div>
+          <div class="carousel-item" style="background-image: url('https://animemangastore.com/wp-content/uploads/2020/11/no-game-no-life-keychain.jpg')">
+            <div class="item-details">
+                <h3 class="item-name">Genshin Impact Klee Dodoco Cro</h3>
+                <p class="item-price">$20.99</p>
+            </div>
+        </div>
+          <div class="carousel-item" style="background-image: url('https://alitools.io/en/showcase/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHf812fe910ffc46dc9ce217414bb203c1N.jpg')">
+            <div class="item-details">
+                <h3 class="item-name">Genshin Impact Klee Dodoco Cro</h3>
+                <p class="item-price">$20.99</p>
+            </div>
+        </div>
+          <div class="carousel-item" style="background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1654473538255844161/0EB3C8C0C310576DB910968D1F7C280FB3007D0B/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true')">
+            <div class="item-details">
+                <h3 class="item-name">Genshin Impact Klee Dodoco Cro</h3>
+                <p class="item-price">$20.99</p>
+            </div>
+        </div>
+          <div class="carousel-item" style="background-image: url('https://www.shutterstock.com/shutterstock/photos/2285845891/display_1500/stock-vector-cat-with-thumb-up-pixel-art-meme-2285845891.jpg')">
+            <div class="item-details">
+                <h3 class="item-name">Genshin Impact Klee Dodoco Cro</h3>
+                <p class="item-price">$20.99</p>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-button prev" onclick="goToPrevSlide()">Previous</button><img src="" alt="">
+        <button class="carousel-button next" onclick="goToNextSlide()">Next</button>
+     </div>
+
+      <h3 style="margin: 0 160px; font-size: 25px;">PRODUCT CATEGORIES</h3>
+
+      <div class="category-container">
+        <div class="category-content">
+            <div class="category-item" style="margin-left: 50px; background-image: url('https://img.lazcdn.com/g/p/3187ca6c5db8358836a9750dbb33bb19.jpg_720x720q80.jpg');">
+                <p class="Category-Name">Stickers</p>
+            </div>
+            <div class="category-item" style="background-image: url('https://i.ebayimg.com/images/g/qV4AAOSwcYtjWPjH/s-l1200.webp')">
+                <p class="Category-Name">Key Chains</p>
+            </div>
+            <div class="category-item" style="background-image: url('https://img.lazcdn.com/g/p/bf84fbbad07ac83b57e7d137ec148fd2.jpg_720x720q80.jpg')">
+                <p class="Category-Name">Pins</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-container">
+        <div class="category-content">
+            <div class="category-item" style="margin-left: 50px; background-image: url('https://theloopedcrafts.com/cdn/shop/collections/D1C1053D-8CEF-40F5-AEBF-74A5F49E8987_5.jpg?v=1682066568');">
+                <p class="Category-Name">Crochets</p>
+            </div>
+            <div class="category-item" style="background-image: url('https://i.pinimg.com/736x/5e/af/eb/5eafeb0bd0a54bd08b64b4f1b6696c57.jpg')">
+                <p class="Category-Name">Jewelries</p>
+            </div>
+            <div class="category-item" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4hVEIL4v7mZ4S8FKMiigDBEKSQDwkiwnV0KE-TNWqKA&s')">
+                <p class="Category-Name">Others</p>
+            </div>
+        </div>
+    </div>
+        
+      
+     
+              
+      <script>
+        const carouselContent = document.querySelector('.carousel-content');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const totalItems = carouselItems.length;
+        let currentIndex = 0;
+      
+        function goToNextSlide() {
+          if (currentIndex < totalItems - 1) { // Move forward by 1 items
+            currentIndex += 1;
+          } else {
+            currentIndex = 0;
+          }
+          updateCarousel();
+        }
+      
+        function goToPrevSlide() {
+          if (currentIndex > 0) {
+            currentIndex -= 1; // Move backward by 1 items
+          } else {
+            currentIndex = totalItems - 1;
+          }
+          updateCarousel();
+        }
+      
+        function updateCarousel() {
+            const itemWidth = carouselContent.clientWidth / totalItems;
+            carouselContent.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+
+      </script>
+    
+</body>
+</html>
